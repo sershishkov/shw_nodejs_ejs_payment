@@ -13,8 +13,5 @@
             "runtimeExecutable": "nodemon",
             "console": "integratedTerminal"
         },
-
-        
-       
     ]
 }
