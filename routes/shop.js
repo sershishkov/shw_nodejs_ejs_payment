@@ -19,7 +19,7 @@ router.get('/', (req, res, next) => {
         hasProducts: products.length > 0,
         activShop: true,
         productCSS: true,
-        layout: false
+        // layout: false
     });
 });
 
