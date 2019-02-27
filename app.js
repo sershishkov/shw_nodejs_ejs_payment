@@ -2,13 +2,20 @@ const path = require('path');
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const expressHbs = require('express-handlebars');
 
 
 
 const port = 3000;
 const app = express();
 
-app.set('view engine', 'pug');
+// //pug
+// app.set('view engine', 'pug');
+// app.set('views', 'views');
+
+//HANDLEBARS
+app.engine('hbs', expressHbs());
+app.set('view engine', 'hbs');
 app.set('views', 'views');
 
 const adminData = require('./routes/admin');
