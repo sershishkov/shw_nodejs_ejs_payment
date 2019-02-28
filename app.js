@@ -2,8 +2,8 @@ const path = require('path');
 
 const express = require('express');
 const bodyParser = require('body-parser');
-// const expressHbs = require('express-handlebars');
 
+const errorController = require('./controllers/error');
 
 
 const port = 3000;
@@ -24,9 +24,7 @@ app.use(shopRoutes);
 
 
 
-app.use((req, res, next) => {
-    res.status(404).render('404', { pageTitle: '404' });
-});
+app.use(errorController.get404);
 
 app.listen(port, () => {
     // console.log(`Server started on port ${port}`);
