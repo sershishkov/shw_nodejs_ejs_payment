@@ -23,7 +23,7 @@ exports.getProducts = (req, res, next) => {
         prods: products,
         pageTitle: 'Shop',
         path: "/",
-        hasProducts: products.length > 0,
+        // hasProducts: products.length > 0,
         activShop: true,
         productCSS: true,
         // layout: false
