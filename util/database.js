@@ -28,3 +28,12 @@ const getDb = () => {
 
 exports.mongoConnect = mongoConnect;
 exports.getDb = getDb;
+
+// const transporter = nodemailer.createTransport(
+//   sendgridTransport({
+//     auth: {
+//       api_key:
+//         "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"
+//     }
+//   })
+// );
