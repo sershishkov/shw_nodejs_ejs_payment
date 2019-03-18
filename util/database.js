@@ -29,6 +29,8 @@ const getDb = () => {
 exports.mongoConnect = mongoConnect;
 exports.getDb = getDb;
 
+// mongodb+srv://sershishkov:q4oVcORO8hagxtVb@cluster0-071ff.mongodb.net/shop"
+
 // const transporter = nodemailer.createTransport(
 //   sendgridTransport({
 //     auth: {
@@ -37,3 +39,12 @@ exports.getDb = getDb;
 //     }
 //   })
 // );
+
+// mongoose
+//   .connect(MONGODB_URI, { useNewUrlParser: true })
+//   .then(result => {
+//     app.listen(3000);
+//   })
+//   .catch(err => {
+//     console.log(err);
+//   });
