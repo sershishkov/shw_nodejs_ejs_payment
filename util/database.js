@@ -29,6 +29,9 @@ const getDb = () => {
 exports.mongoConnect = mongoConnect;
 exports.getDb = getDb;
 
+// const stripe = require("stripe")("sk_test_kgATjFW7uofwraH0GbnsdZ1A");
+// data-key="pk_test_bFGb71SaD5cPPbJ1XsK3uO5b"
+
 // mongodb+srv://sershishkov:q4oVcORO8hagxtVb@cluster0-071ff.mongodb.net/shop"
 
 // const transporter = nodemailer.createTransport(
